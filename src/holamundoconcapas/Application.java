@@ -18,7 +18,6 @@ public class Application {
         ModelFactory model=new ModelFactory();
         ViewFactory view=new ViewFactory();
         Controller con=new Controller();
-        
         con.run(view.getView(),model.getModel());
     }
 }
