@@ -9,8 +9,6 @@ package holamundoconcapas.view;
  *
  * @author 2dam
  */
-public class ViewFactory {
-    public View getView(){
-        return new ViewImplementation();
-    }
+public class SwingViewImplementation {
+    
 }
