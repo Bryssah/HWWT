@@ -5,6 +5,7 @@
  */
 package holamundoconcapas.view;
 
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,6 +19,8 @@ import javafx.stage.Stage;
  * @author javi
  */
 public class JavaFXViewImplementation extends Application implements View {
+       private static final Logger LOGGER = Logger
+            .getLogger("holamundoconcapas.view.JavaFXViewImplementation");
     /**
      * Private static member to store the greeting passed from the model to be
      * shown. It is static because calling to static launch() method creates a 
@@ -32,6 +35,7 @@ public class JavaFXViewImplementation extends Application implements View {
     @Override
     public void start(Stage stage) {
         try{
+            LOGGER.info("Starting Start Method");
             //Load node graph from fxml file
             FXMLLoader loader=new FXMLLoader(
                     getClass().getResource("FXMLDocument.fxml"));
@@ -43,8 +47,10 @@ public class JavaFXViewImplementation extends Application implements View {
             viewController.setGreeting(greeting);
             viewController.setStage(stage);
             viewController.initStage(root);
+            LOGGER.info("Ending Start Method with OK");
         }catch(Exception e){
             e.printStackTrace();
+            LOGGER.severe(e.getMessage());
         }
     }
     /**
@@ -58,6 +64,7 @@ public class JavaFXViewImplementation extends Application implements View {
     }
     /**
      * Initialization method for JavaFX app. Stores greeting.  
+     * @throws java.lang.Exception
      */
     @Override
     public void init() throws Exception{
@@ -65,6 +72,7 @@ public class JavaFXViewImplementation extends Application implements View {
     }
     /**
      * Greeting setter.
+     * @param greeting
      */
     public void setGreeting(String greeting){
         this.greeting=greeting;

@@ -10,7 +10,7 @@ import holamundoconcapas.model.ModelFactory;
 import holamundoconcapas.view.ViewFactory;
 
 /**
- *
+ * Main application
  * @author 2dam
  */
 public class Application {

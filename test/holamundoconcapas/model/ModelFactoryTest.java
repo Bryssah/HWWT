@@ -13,7 +13,6 @@ import static org.junit.Assert.*;
  * @author 2dam
  */
 public class ModelFactoryTest {
-    
     public ModelFactoryTest() {
     }
 
