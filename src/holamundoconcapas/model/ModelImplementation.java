@@ -6,17 +6,18 @@
 package holamundoconcapas.model;
 
 /**
- *
- * @author 2dam
+ * A Model implementation.
+ * @author javi
  */
 public class ModelImplementation implements Model{
-    private String greeting="Hola Mundo!";
-    
-    public ModelImplementation(/*String greeting*/){
-        //this.greeting=greeting;
-    }
+    /**
+     * Get a greeting.
+     * @return a String representing the greeting
+     */
 
-    public String getGreeting(){
-        return this.greeting;
+    @Override
+    public String getGreeting() {
+        return "Hello World!! This is an application with tiers, factories and interfaces!!";
     }
+    
 }

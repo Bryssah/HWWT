@@ -6,11 +6,16 @@
 package holamundoconcapas.model;
 
 /**
- *
- * @author 2dam
+ * Model factory that provides a method to get a model implementation.
+ * @author javi
  */
 public class ModelFactory {
-    public Model getModel(){
-        return new FileModelImplementation(); 
+    /**
+     * Get a Model implementation
+     * @return the Model implementation
+     */
+    public static Model getModel(){
+        return new ModelImplementation();
     }
+    
 }

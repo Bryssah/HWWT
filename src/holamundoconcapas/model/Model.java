@@ -6,9 +6,13 @@
 package holamundoconcapas.model;
 
 /**
- *
- * @author 2dam
+ * Model interface containing model methods.
+ * @author javi
  */
 public interface Model {
-    public String getGreeting();           
+    /**
+     * Get a greeting.
+     * @return a String representing the greeting
+     */
+    public String getGreeting();
 }

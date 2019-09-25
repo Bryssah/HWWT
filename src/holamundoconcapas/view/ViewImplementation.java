@@ -6,14 +6,17 @@
 package holamundoconcapas.view;
 
 /**
- *
- * @author 2dam
+ * A View implementation.
+ * @author javi
  */
 public class ViewImplementation implements View{
-    public ViewImplementation(){
-        
-    }
-    public void showGreeting(String greeting){
+    /**
+     * Show a greeting.
+     * @param greeting A String containing the greeting.
+     */
+    @Override
+    public void showGreeting(String greeting) {
         System.out.println(greeting);
     }
+    
 }

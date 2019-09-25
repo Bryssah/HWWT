@@ -21,4 +21,5 @@ public class Application {
         con.run(view.getView(),model.getModel());
         //new Controller.run(ViewFactory.getView(),ModelFactory.getModel())
     }
+   
 }

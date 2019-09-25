@@ -8,14 +8,19 @@ package holamundoconcapas.controller;
 import holamundoconcapas.model.Model;
 import holamundoconcapas.view.View;
 
-
-
 /**
- *
- * @author 2dam
+ * Controller class for Hello World application with tiers.
+ * @author javi
  */
 public class Controller {
-    public void run(View view, Model model){
+    /**
+     * This method executes the application's logic. Namely, it orders the view 
+     * to show a greeting got from the model.
+     * @param view the view object
+     * @param model the model object
+     */
+    public void run(View view, Model model) {
         view.showGreeting(model.getGreeting());
     }
+    
 }

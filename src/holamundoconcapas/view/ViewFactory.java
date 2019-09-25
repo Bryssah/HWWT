@@ -6,11 +6,18 @@
 package holamundoconcapas.view;
 
 /**
- *
- * @author 2dam
+ * View factory that provides a method to get a View implementation.
+ * @author javi
  */
 public class ViewFactory {
-    public View getView(){
-        return new ViewImplementation();
+    /**
+     * Get a View implementation
+     * @return the View implementation
+     */
+    public static View getView(){
+        //Uncomment to show text ui implementation
+        //return new ViewImplementation();
+        return new JavaFXViewImplementation();
     }
+    
 }

@@ -6,9 +6,14 @@
 package holamundoconcapas.view;
 
 /**
- *
- * @author 2dam
+ * View interface containing view methods.
+ * @author javi
  */
 public interface View {
+    /**
+     * Show a greeting.
+     * @param greeting A String containing the greeting.
+     */
     public void showGreeting(String greeting);
+    
 }
